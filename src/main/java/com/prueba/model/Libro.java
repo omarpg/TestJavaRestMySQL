@@ -35,6 +35,18 @@ public class Libro implements Serializable{
 	@Column(name="precio", unique=true, nullable=true, length=20)
 	private long precio;
 	
+	public Libro() {
+	}
+	
+	public Libro(String nombre, String autor, int anio, String editorial, long precio) {
+		super();
+		this.nombre = nombre;
+		this.autor = autor;
+		this.anio = anio;
+		this.editorial = editorial;
+		this.precio = precio;
+	}
+	
 	public long getId() {
 		return id;
 	}
